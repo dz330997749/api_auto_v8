@@ -15,7 +15,7 @@ public class Constants {
     public static final String EXCEL_PATH = "src/test/resources/cases_v3.xlsx";
 
     //柠檬班特殊头
-    public static final String X_LEMONBAN_MEDIA_TYPE = "lemonban.v3";
+    public static final String X_LEMONBAN_MEDIA_TYPE = "lemonban.v2";
 
     //响应体回写列号
     public static final int RESPONSE_CELLNUM = 8;

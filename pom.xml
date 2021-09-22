@@ -47,12 +47,12 @@
             <groupId>cn.afterturn</groupId>
             <artifactId>easypoi-base</artifactId>
             <version>4.2.0</version>
-            <!--<exclusions>
+            <exclusions>
                 <exclusion>
                     <groupId>org.apache.commons</groupId>
                     <artifactId>commons-lang3</artifactId>
                 </exclusion>
-            </exclusions>-->
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -91,11 +91,11 @@
             <version>2.6.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.lemon</groupId>
             <artifactId>lemoner</artifactId>
             <version>1.0</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>com.github.eljah</groupId>

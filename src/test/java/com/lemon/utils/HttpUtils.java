@@ -3,7 +3,7 @@ package com.lemon.utils;
 import com.alibaba.fastjson.JSONObject;
 //import com.lemon.EncryptUtils;
 import com.lemon.cases.LoginCase;
-import com.lemon.encryption.EncryptUtils;
+//import com.lemon.encryption.EncryptUtils;
 import com.lemon.pojo.CaseInfo;
 import io.restassured.RestAssured;
 import io.restassured.config.ConnectionConfig;
@@ -65,21 +65,21 @@ public class HttpUtils {
      * @return
      */
     public static void authorizationParam(CaseInfo caseInfo) {
-        //timestamp 参数
-        long timestamp = System.currentTimeMillis() / 1000;
-        String token = UserData.vars.get("${token}").toString();
-        String token50 = token.substring(0,50);
-        //token前50位和timestamp相加
-        String sign = token50 + timestamp;
-        //sign参数 rsa加密
-        sign = EncryptUtils.rsaEncrypt(sign);
-        //params => Map
-        Map map = JSONObject.parseObject(caseInfo.getParams(), Map.class);
-        map.put("timestamp",timestamp);
-        map.put("sign",sign);
-        //添加完参数之后转会Json串
-        String params = JSONObject.toJSONString(map);
-        caseInfo.setParams(params);
+//        //timestamp 参数
+//        long timestamp = System.currentTimeMillis() / 1000;
+//        String token = UserData.vars.get("${token}").toString();
+//        String token50 = token.substring(0,50);
+//        //token前50位和timestamp相加
+//        String sign = token50 + timestamp;
+//        //sign参数 rsa加密
+//        sign = EncryptUtils.rsaEncrypt(sign);
+//        //params => Map
+//        Map map = JSONObject.parseObject(caseInfo.getParams(), Map.class);
+//        map.put("timestamp",timestamp);
+//        map.put("sign",sign);
+//        //添加完参数之后转会Json串
+//        String params = JSONObject.toJSONString(map);
+//        caseInfo.setParams(params);
     }
 
     /**
